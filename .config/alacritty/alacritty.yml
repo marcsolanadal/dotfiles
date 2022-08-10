@@ -1,0 +1,14 @@
+import:
+  - ./alacritty-theme/themes/pencil_light.yaml
+
+window:
+  padding:
+    x: 10
+    y: 10
+  decorations: none
+  startup_mode: Windowed
+
+font:
+  size: 18
+  normal:
+    family: Inconsolata Nerd Font 
