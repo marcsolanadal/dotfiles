@@ -3,3 +3,5 @@
 	name = Marc Solà Nadal
 [init]
 	defaultBranch = master
+[core]
+	editor = vim
