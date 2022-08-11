@@ -20,7 +20,7 @@ default_border none
 default_floating_border none
 gaps inner 5
 
-output * bg /home/bindweed/Pictures/background.png fill
+#output * bg /home/bindweed/Pictures/background.png fill
 output Virtual-1 resolution 1920x1080 position 1920,0
 
 ### Idle configuration
@@ -68,13 +68,13 @@ output Virtual-1 resolution 1920x1080 position 1920,0
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-    floating_modifier $mod normal
+    #floating_modifier $mod normal
 
     # Reload the configuration file
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    #bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #

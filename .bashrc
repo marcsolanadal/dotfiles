@@ -31,11 +31,11 @@ alias correpi='ssh corretjola@correpi.local'
 alias vim='nvim'
 
 eval "$(starship init bash)"
-source $XDG_DATA_HOME/extra/completions/alacritty.bash
+#source $XDG_DATA_HOME/alacritty/extra/completions/alacritty.bash
 
 # Base16 Shell
 BASE16_THEME="base16-circus"
-BASE16_SHELL="$HOME/.config/base16-shell/"
+BASE16_SHELL="$XDG_DATA_HOME/base16-shell/"
 [ -n "$PS1" ] && \
 	[ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 	eval "$("$BASE16_SHELL/profile_helper.sh")"
