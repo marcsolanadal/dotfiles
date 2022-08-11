@@ -1,3 +1,3 @@
 #! /bin/bash
 
-ls -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
