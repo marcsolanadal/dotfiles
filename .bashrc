@@ -31,7 +31,7 @@ alias correpi='ssh corretjola@correpi.local'
 alias vim='nvim'
 
 eval "$(starship init bash)"
-source /home/corretjola/alacritty/extra/completions/alacritty.bash
+source $XDG_DATA_HOME/extra/completions/alacritty.bash
 
 # Base16 Shell
 BASE16_THEME="base16-circus"

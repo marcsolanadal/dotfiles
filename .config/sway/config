@@ -20,7 +20,7 @@ default_border none
 default_floating_border none
 gaps inner 5
 
-output * bg /home/bindweed/Pictures/zentree.png fill
+output * bg /home/bindweed/Pictures/background.png fill
 output Virtual-1 resolution 1920x1080 position 1920,0
 
 ### Idle configuration
