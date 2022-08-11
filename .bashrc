@@ -30,10 +30,6 @@ alias obsidian='~/Applications/Obsidian-0.14.6.AppImage'
 alias correpi='ssh corretjola@correpi.local'
 alias vim='nvim'
 
-# Creates virtualenvs inside the project folder to avoid problems with subsequent path changes.
-export PIPENV_VENV_IN_PROJECT=1
-. "$HOME/.cargo/env"
-
 eval "$(starship init bash)"
 source /home/corretjola/alacritty/extra/completions/alacritty.bash
 
