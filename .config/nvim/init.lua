@@ -1,5 +1,6 @@
 require('configs')
 
+vim.g.mapleader = " "
 vim.o.termguicolors = true
 vim.cmd('colorscheme base16-' .. os.getenv("BASE16_THEME"))
 

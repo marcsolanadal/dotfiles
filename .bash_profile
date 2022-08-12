@@ -12,4 +12,4 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 # Vagrant config
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 export VAGRANT_LOG=info
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
