@@ -2,6 +2,7 @@ import:
   - ./alacritty-theme/themes/pencil_light.yaml
 
 window:
+  opacity: 0.9
   padding:
     x: 10
     y: 10
@@ -9,6 +10,6 @@ window:
   startup_mode: Windowed
 
 font:
-  size: 18
+  size: 16
   normal:
-    family: Inconsolata Nerd Font Mono
+    family: Fira Code Nerd Font

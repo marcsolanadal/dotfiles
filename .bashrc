@@ -26,9 +26,15 @@ fi
 
 unset rc
 
+HISTTIMEFORMAT="%Y-%m-%d %T "
+HISTCONTROL=ignoreboth
+
+# App shortcuts
 alias obsidian='~/Applications/Obsidian-0.14.6.AppImage'
-alias correpi='ssh corretjola@correpi.local'
 alias vim='nvim'
+
+# Servers
+alias correpi='ssh corretjola@correpi.local'
 
 eval "$(starship init bash)"
 #source $XDG_DATA_HOME/alacritty/extra/completions/alacritty.bash
