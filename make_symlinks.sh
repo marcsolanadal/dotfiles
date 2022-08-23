@@ -1,7 +1,8 @@
 #! /bin/bash
 
-# General config
+# Development
 ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+ln -s $HOME/.config/lazygit $XDG_CONFIG_HOME/lazygit
 
 # Terminal
 ln -n $HOME/dotfiles/.config/tmux/tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf
