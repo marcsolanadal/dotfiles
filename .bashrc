@@ -40,6 +40,7 @@ eval "$(starship init bash)"
 #source $XDG_DATA_HOME/alacritty/extra/completions/alacritty.bash
 
 # Base16 Shell
+BAT_THEME="base16-256"
 BASE16_THEME="base16-circus"
 BASE16_SHELL="$XDG_DATA_HOME/base16-shell/"
 [ -n "$PS1" ] && \

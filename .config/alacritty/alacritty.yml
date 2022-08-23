@@ -2,7 +2,6 @@ import:
   - ./alacritty-theme/themes/pencil_light.yaml
 
 window:
-  opacity: 0.9
   padding:
     x: 10
     y: 10

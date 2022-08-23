@@ -12,9 +12,9 @@ sudo dnf install cmus mpv
 sudo dnf install sway waybar rofi alacritty starship
 git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16-shell
 
-# Install git tools
+# Install terminal productivity tools
 sudo dnf copr enable atim/lazygit -y
-sudo dnf install git lazygit git-delta
+sudo dnf install git lazygit git-delta bat
 
 # Download and install fonts
 wget -P $XDG_DATA_HOME https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Inconsolata/complete/Inconsolata%20Nerd%20Font%20Complete%20Mono.otf
