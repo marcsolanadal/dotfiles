@@ -17,3 +17,4 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>gg", ":FloatermNew --wintype=float --height=0.95 --width=0.95 --name=lazygit --autoclose=2 lazygit<cr>", opts)

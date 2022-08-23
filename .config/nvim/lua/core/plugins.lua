@@ -36,6 +36,8 @@ return packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'RRethy/nvim-base16'
   use 'norcalli/nvim-colorizer.lua'
+  use 'voldikss/vim-floaterm'
+
   -- use "williamboman/mason.nvim"
 
   use {
