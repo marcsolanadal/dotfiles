@@ -1,5 +1,3 @@
-# TODO: Split desktop and terminal install scripts
-
 # Enable RPM Fusion in Fedora
 sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -7,13 +5,13 @@ sudo dnf install \
 # Media applications
 sudo dnf install cmus mpv
 
-# Install packages and clone repos
-sudo dnf install sway waybar rofi alacritty starship
-git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16-shell
+# Wayland
+sudo dnf install sway waybar rofi alacritty
 
-# Install terminal productivity tools
+# Terminal
+git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16-shell
 sudo dnf copr enable atim/lazygit -y
-sudo dnf install git lazygit git-delta bat
+sudo dnf install git lazygit git-delta bat exa ripgrep procs fd-find starship
 
 # Docker
 sudo dnf install dnf-plugins-core

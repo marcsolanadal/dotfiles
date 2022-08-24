@@ -30,6 +30,8 @@ alias obsidian='~/Applications/Obsidian-0.14.6.AppImage'
 alias vim='nvim'
 alias lzg='lazygit'
 alias lzd='lazydocker'
+alias cat='bat'
+alias ls='exa'
 
 # Servers
 alias correpi='ssh corretjola@correpi.local'
