@@ -1,4 +1,3 @@
-
 # TODO: Split desktop and terminal install scripts
 
 # Enable RPM Fusion in Fedora
@@ -15,6 +14,9 @@ git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16
 # Install terminal productivity tools
 sudo dnf copr enable atim/lazygit -y
 sudo dnf install git lazygit git-delta bat
+
+# Docker
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
 # Download and install fonts
 wget -P $XDG_DATA_HOME https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Inconsolata/complete/Inconsolata%20Nerd%20Font%20Complete%20Mono.otf

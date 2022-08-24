@@ -12,9 +12,6 @@ then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
 	for rc in ~/.bashrc.d/*; do
@@ -23,7 +20,6 @@ if [ -d ~/.bashrc.d ]; then
 		fi
 	done
 fi
-
 unset rc
 
 HISTTIMEFORMAT="%Y-%m-%d %T "
@@ -32,6 +28,8 @@ HISTCONTROL=ignoreboth
 # App shortcuts
 alias obsidian='~/Applications/Obsidian-0.14.6.AppImage'
 alias vim='nvim'
+alias lzg='lazygit'
+alias lzd='lazydocker'
 
 # Servers
 alias correpi='ssh corretjola@correpi.local'
