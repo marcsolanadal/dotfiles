@@ -3,5 +3,5 @@ if not status_ok then
 	return
 end
 
-require('lsp.mason')
+require('addon.lsp.mason')
 

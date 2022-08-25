@@ -1,5 +1,7 @@
 -- Takes current base16 theme from env
-local colorscheme = "base16-" .. os.getenv("BASE16_THEME")
+-- local colorscheme = "base16-" .. os.getenv("BASE16_THEME")
+
+local colorscheme = "nord"
 
 -- Safely set colortheme
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

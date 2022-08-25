@@ -3,6 +3,7 @@ require('core.keymaps')
 require('core.plugins')
 require('core.colorscheme')
 require('core.cmp')
-require('lsp')
 
-
+require('addon.lsp')
+require('addon.autopairs')
+require('addon.telescope')

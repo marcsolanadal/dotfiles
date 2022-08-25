@@ -35,6 +35,7 @@ return packer.startup(function(use)
 
     use 'nvim-lua/plenary.nvim'
     use 'RRethy/nvim-base16'
+    use 'arcticicestudio/nord-vim'
     use 'norcalli/nvim-colorizer.lua'
     use 'voldikss/vim-floaterm'
 
@@ -45,9 +46,9 @@ return packer.startup(function(use)
     }
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        'nvim-telescope/telescope.nvim', 
+        tag = '0.1.0',
         requires = {'nvim-lua/plenary.nvim'},
-        config = function() require('telescope').setup() end
     }
 
     use {
@@ -55,6 +56,8 @@ return packer.startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         config = function() require('lualine').setup() end
     }
+
+    use 'windwp/nvim-autopairs' -- automatic pair completion
 
     -- Cmp plugins
     use 'hrsh7th/nvim-cmp' -- completion plugin
