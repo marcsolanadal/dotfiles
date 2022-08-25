@@ -13,6 +13,14 @@ git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16
 sudo dnf copr enable atim/lazygit -y
 sudo dnf install git lazygit git-delta bat exa ripgrep procs fd-find starship
 
+# nnn
+# -- from source to have nerdfont support
+sudo dnf install readline-devel
+git clone https://github.com/jarun/nnn.git /tmp/nnn
+make O_NERD=1
+sudo mv nnn /usr/bin/
+rm -rf /tmp/nnn
+
 # Docker
 sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo

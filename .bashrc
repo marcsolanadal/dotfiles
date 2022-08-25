@@ -21,7 +21,8 @@ if [ -d ~/.bashrc.d ]; then
 	done
 fi
 unset rc
-
+ 
+EDITOR="nvim"
 HISTTIMEFORMAT="%Y-%m-%d %T "
 HISTCONTROL=ignoreboth
 
@@ -31,10 +32,16 @@ alias vim='nvim'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 alias cat='bat'
-alias ls='exa'
+alias ls='nnn -e'
 
 # Servers
 alias correpi='ssh corretjola@correpi.local'
+
+# nnn
+
+## Add Nord theme to nnn
+BLK="0B" CHR="0B" DIR="04" EXE="06" REG="00" HARDLINK="06" SYMLINK="06" MISSING="00" ORPHAN="09" FIFO="06" SOCK="0B" OTHER="06"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 
 eval "$(starship init bash)"
 #source $XDG_DATA_HOME/alacritty/extra/completions/alacritty.bash
