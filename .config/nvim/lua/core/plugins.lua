@@ -39,6 +39,11 @@ return packer.startup(function(use)
     use 'norcalli/nvim-colorizer.lua'
     use 'voldikss/vim-floaterm'
 
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
     use {
         'lewis6991/gitsigns.nvim',
         requires = { 'nvim-lua/plenary.nvim'},

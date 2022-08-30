@@ -12,6 +12,13 @@ local options = {
     expandtab = true, -- expands tabs to spaces
 }
 
+
+-- Autocommand that reloads Neovim on plugins.lua change
+vim.cmd [[
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
+]]
+
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
