@@ -4,4 +4,6 @@ if not status_ok then
 end
 
 require('addon.lsp.mason')
+require('addon.lsp.null-ls')
+
 

@@ -79,6 +79,7 @@ return packer.startup(function(use)
     use 'neovim/nvim-lspconfig' -- configurations for Nvim LSP
     use 'williamboman/mason.nvim' -- manage lsp, dap, linters and formatters
     use 'williamboman/mason-lspconfig.nvim' -- makes mason and lspconfig work together
+    use 'jose-elias-alvarez/null-ls.nvim' -- formating and linting
 
     -- Syntax highlighting
     use {
