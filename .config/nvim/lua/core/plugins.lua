@@ -35,7 +35,7 @@ return packer.startup(function(use)
 
     use 'nvim-lua/plenary.nvim'
     use 'RRethy/nvim-base16'
-    use 'arcticicestudio/nord-vim'
+    use 'folke/tokyonight.nvim'
     use 'norcalli/nvim-colorizer.lua'
     use 'voldikss/vim-floaterm'
 
@@ -79,6 +79,12 @@ return packer.startup(function(use)
     use 'neovim/nvim-lspconfig' -- configurations for Nvim LSP
     use 'williamboman/mason.nvim' -- manage lsp, dap, linters and formatters
     use 'williamboman/mason-lspconfig.nvim' -- makes mason and lspconfig work together
+
+    -- Syntax highlighting
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

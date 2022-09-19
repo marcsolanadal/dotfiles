@@ -6,7 +6,7 @@ sudo dnf install \
 sudo dnf install cmus mpv
 
 # Wayland
-sudo dnf install sway waybar rofi alacritty
+sudo dnf install sway waybar rofi alacritty wl-clipboard
 
 # Terminal
 git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16-shell
