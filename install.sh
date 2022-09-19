@@ -1,3 +1,7 @@
+
+# Create apps folder
+mkdir ~/Applications
+
 # Enable RPM Fusion in Fedora
 sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -12,6 +16,11 @@ sudo dnf install sway waybar rofi alacritty wl-clipboard
 git clone https://github.com/chriskempson/base16-shell.git $XDG_DATA_HOME/base16-shell
 sudo dnf copr enable atim/lazygit -y
 sudo dnf install git lazygit git-delta bat exa ripgrep procs fd-find starship
+
+# NeoVim appimage
+wget -P ~/Applications/ https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+chmod +x ~/Applications/nvim.appimage
+ls -s ~/Applications/nvim.appimage /urs/local/bin/nvim
 
 # nnn
 # -- from source to have nerdfont support

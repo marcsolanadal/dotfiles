@@ -32,7 +32,6 @@ alias vim='nvim'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 alias cat='bat'
-alias ls='nnn -e'
 
 # Servers
 alias correpi='ssh corretjola@correpi.local'
