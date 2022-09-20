@@ -12,6 +12,9 @@ local options = {
     expandtab = true, -- expands tabs to spaces
 }
 
+for k, v in pairs(options) do
+    vim.opt[k] = v
+end
 
 -- Autocommand that reloads Neovim on plugins.lua change
 vim.cmd [[
@@ -19,7 +22,6 @@ autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 ]]
 
-for k, v in pairs(options) do
-    vim.opt[k] = v
-end
-
+-- Autocomand to format on save
+-- Use formatting_seq_sync to avoid conflicting null-ls with lsp formatter
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
