@@ -1,13 +1,13 @@
 local fn = vim.fn
 
 -- Automatically installs packer
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
     packer_bootstrap = fn.system({
-        'git', 
-        'clone', 
-        '--depth', 
-        '1', 
+        'git',
+        'clone',
+        '--depth',
+        '1',
         'https://github.com/wbthomason/packer.nvim',
         install_path,
     })
@@ -46,14 +46,14 @@ return packer.startup(function(use)
 
     use {
         'lewis6991/gitsigns.nvim',
-        requires = { 'nvim-lua/plenary.nvim'},
+        requires = { 'nvim-lua/plenary.nvim' },
         config = function() require('gitsigns').setup() end
     }
 
     use {
-        'nvim-telescope/telescope.nvim', 
+        'nvim-telescope/telescope.nvim',
         tag = '0.1.0',
-        requires = {'nvim-lua/plenary.nvim'},
+        requires = { 'nvim-lua/plenary.nvim' },
     }
 
     use {
