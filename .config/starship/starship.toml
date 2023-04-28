@@ -45,3 +45,9 @@ style = "yellow"
 format = "[$virtualenv]($style) "
 style = "bright-black"
 
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
