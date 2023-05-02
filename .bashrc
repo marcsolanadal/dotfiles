@@ -36,6 +36,9 @@ alias cat='bat'
 # Servers
 alias correpi='ssh corretjola@correpi.local'
 
+# Keybindings
+bind -x '"\C-f": tmux split-window -h "~/dotfiles/bin/rfv"'
+
 # nnn
 
 ## Add Nord theme to nnn

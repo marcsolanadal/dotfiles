@@ -32,4 +32,5 @@ lazygit --version
 ln -n $HOME/dotfiles/.config/tmux/tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf
 ln -s $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
-ln -s $HOME/dotfiles/.config/starship/starship.toml $XDG_CONFIG_HOME/starship.toml
+ln -s $HOME/dotfiles/.config/starship/starship.toml $XDG_CONFIG_HOME/starship.tom
+
