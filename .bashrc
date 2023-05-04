@@ -32,12 +32,13 @@ alias vim='nvim'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 alias cat='bat'
+alias tree='exa --tree --level=2'
 
 # Servers
 alias correpi='ssh corretjola@correpi.local'
 
 # Keybindings
-bind -x '"\C-f": tmux split-window -h "~/dotfiles/bin/rfv"'
+bind -x '"\C-p": "~/dotfiles/bin/rfv"'
 
 # nnn
 
