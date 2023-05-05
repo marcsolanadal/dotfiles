@@ -36,4 +36,7 @@ ln -s $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
 ln -s $HOME/dotfiles/.config/starship/starship.toml $XDG_CONFIG_HOME/starship.tom
 
+mkdir -p $XDG_CONFIG_HOME/git
+ln -s $HOME/dotfiles/.config/git/config $XDG_CONFIG_HOME/git/config
+
 
