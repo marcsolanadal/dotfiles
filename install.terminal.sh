@@ -19,7 +19,7 @@ cargo install ripgrep --locked
 cargo install fd-find --locked
 
 # Install fzf
-t clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 # Install NeoVim
@@ -36,6 +36,7 @@ ln -s $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
 ln -s $HOME/dotfiles/.config/starship/starship.toml $XDG_CONFIG_HOME/starship.tom
 
+# Configure git
 mkdir -p $XDG_CONFIG_HOME/git
 ln -s $HOME/dotfiles/.config/git/config $XDG_CONFIG_HOME/git/config
 

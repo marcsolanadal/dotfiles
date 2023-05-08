@@ -69,3 +69,4 @@
 
 [alias]
 	adog = log --all --decorate --oneline --graph
+	who = blame
