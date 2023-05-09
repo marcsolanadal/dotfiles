@@ -19,6 +19,7 @@
 	side-by-side = true
 	hyperlinks = true
 	whitespace-error-style = 22 reverse
+   	hyperlinks-file-link-format = "file-line://{path}:{line}"
 
 [delta "unobtrusive-line-numbers"]
 	line-numbers = true
