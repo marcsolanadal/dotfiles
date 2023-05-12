@@ -40,4 +40,9 @@ ln -s $HOME/dotfiles/.config/starship/starship.toml $XDG_CONFIG_HOME/starship.to
 mkdir -p $XDG_CONFIG_HOME/git
 ln -s $HOME/dotfiles/.config/git/config $XDG_CONFIG_HOME/git/config
 
-
+# Install PathPicker
+cd $XDG_LOCAL_HOME
+git clone https://github.com/facebook/PathPicker.git
+cd PathPicker/
+ln -s "$(pwd)/fpp" $XDG_LOCAL_HOME/bin/fpp
+cd ~
