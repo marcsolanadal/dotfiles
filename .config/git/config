@@ -69,5 +69,6 @@
 	whitespace = red reverse
 
 [alias]
-	adog = log --all --decorate --oneline --graph
+	graph = log --all --decorate --oneline --graph
 	who = blame
+	co = !git branch --sort=-committerdate | fzf --header Checkout | xargs git checkout
