@@ -72,3 +72,4 @@
 	graph = log --all --decorate --oneline --graph
 	who = blame
 	co = !git branch --sort=-committerdate | fzf --header Checkout | xargs git checkout
+	fza = !git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add 
